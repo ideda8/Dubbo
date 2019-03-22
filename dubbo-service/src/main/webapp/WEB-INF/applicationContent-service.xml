@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/mvc
+    http://www.springframework.org/schema/mvc/spring-mvc.xsd
+    http://code.alibabatech.com/schema/dubbo
+    http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 启用spring mvc 注解 -->
+    <!--<context:annotation-config />-->
+    <!--&lt;!&ndash; 设置使用注解的类所在的jar包 &ndash;&gt;-->
+    <!--<context:component-scan base-package="com.da.dubbo.controller"></context:component-scan>-->
+
+    <!--&lt;!&ndash;后台返回字符串转换器&ndash;&gt;-->
+    <!--<mvc:annotation-driven>-->
+        <!--<mvc:message-converters register-defaults="false">-->
+            <!--<bean class="org.springframework.http.converter.StringHttpMessageConverter">-->
+                <!--<constructor-arg value="UTF-8"></constructor-arg>-->
+            <!--</bean>-->
+        <!--</mvc:message-converters>-->
+    <!--</mvc:annotation-driven>-->
+
+
+
+
+    <!--Dubbo的应用名称 通常使用项目名-->
+    <dubbo:application name="dubbo-service"></dubbo:application>
+
+    <!--配置Dubbo的注册中心地址-->
+    <dubbo:registry address="zookeeper://192.168.31.217:2181"></dubbo:registry>
+
+    <!--配置Dubbo扫描类 将这个类作为服务进行发布-->
+    <dubbo:annotation package="com.da.dubbo.service.impl"></dubbo:annotation>
+
+
+</beans>
