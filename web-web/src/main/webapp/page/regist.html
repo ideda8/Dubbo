@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="../js/jquery-1.10.2.min.js"/>
+
+    <script>
+        $(function () {
+            $('reg_btn').click(function () {
+                $.post('/user/regist/action', $('#reg_form').serialize(), function (data) {
+                    alert(data.flag);
+                    alert(data.message);
+                }, "json")
+            });
+
+        })
+
+    </script>
+</head>
+<body>
+    <h1>注册</h1>
+
+
+    <form method="post" action="/user/regist.action" id="reg_form">
+        用户名: <input type="text" name="username"><br/>
+        手机: <input type="text" name="telephone"><br/>
+        密码: <input type="password" name="password"><br/>
+        确认密码: <input type="password" name="password2"><br/>
+        <button id="reg_btn" value="注册">注册</button>
+
+    </form>
+
+</body>
+</html>

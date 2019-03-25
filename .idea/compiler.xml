@@ -9,12 +9,25 @@
         <module name="dubbo-consumer" />
         <module name="dubbo-service" />
         <module name="tomcattest" />
+        <module name="web-dao" />
+        <module name="web-interface" />
+        <module name="web-pojo" />
+        <module name="web-service" />
+        <module name="web-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="dubbo-consumer" target="1.5" />
       <module name="dubbo-service" target="1.5" />
       <module name="tomcattest" target="1.5" />
+      <module name="web-dao" target="1.5" />
+      <module name="web-interface" target="1.5" />
+      <module name="web-parent" target="1.5" />
+      <module name="web-pojo" target="1.5" />
+      <module name="web-service" target="1.5" />
+      <module name="web-web" target="1.5" />
+      <module name="webdao" target="1.5" />
+      <module name="webpojo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

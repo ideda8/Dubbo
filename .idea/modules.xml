@@ -5,6 +5,12 @@
       <module fileurl="file://$PROJECT_DIR$/dubbo-consumer/dubbo-consumer.iml" filepath="$PROJECT_DIR$/dubbo-consumer/dubbo-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-service/dubbo-service.iml" filepath="$PROJECT_DIR$/dubbo-service/dubbo-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/tomcattest/tomcattest.iml" filepath="$PROJECT_DIR$/tomcattest/tomcattest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-dao/web-dao.iml" filepath="$PROJECT_DIR$/web-dao/web-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-interface/web-interface.iml" filepath="$PROJECT_DIR$/web-interface/web-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-parent/web-parent.iml" filepath="$PROJECT_DIR$/web-parent/web-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-pojo/web-pojo.iml" filepath="$PROJECT_DIR$/web-pojo/web-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-service/web-service.iml" filepath="$PROJECT_DIR$/web-service/web-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-web/web-web.iml" filepath="$PROJECT_DIR$/web-web/web-web.iml" />
     </modules>
   </component>
 </project>
